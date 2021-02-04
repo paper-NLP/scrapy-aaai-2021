@@ -1,0 +1,5 @@
+__pycache__
+files/*
+*.csv
+.vscode
+.DS_Store
