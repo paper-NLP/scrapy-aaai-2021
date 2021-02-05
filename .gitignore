@@ -3,3 +3,7 @@ files/*
 *.csv
 .vscode
 .DS_Store
+images/*
+*.json
+pdf/*
+*.html

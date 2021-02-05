@@ -15,3 +15,9 @@ class AaaiItem(scrapy.Item):
     names = scrapy.Field()
     file_urls = scrapy.Field()
     files = scrapy.Field()
+
+class PlenaryItem(scrapy.Item):
+    title = scrapy.Field()
+    pic_id = scrapy.Field()
+    image_urls = scrapy.Field()
+    images = scrapy.Field()

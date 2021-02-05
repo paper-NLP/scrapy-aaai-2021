@@ -1,7 +1,5 @@
 import scrapy
 from aaai.items import AaaiItem
-
-
 class PapersSpider(scrapy.Spider):
     name = 'papers'
     allowed_domains = ['virtual.2021.aaai.org']

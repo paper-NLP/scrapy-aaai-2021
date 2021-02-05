@@ -40,6 +40,7 @@ COOKIES_ENABLED = True
 DEFAULT_REQUEST_HEADERS = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'en',
+    'Connection': 'Keep-Alive'
 }
 
 # Enable or disable spider middlewares
@@ -63,8 +64,9 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    #  'scrapy.pipelines.files.FilesPipeline': 300,
-    'aaai.pipelines.DownloadPdfPipeline': 300,
+    #'aaai.pipelines.DownloadPdfPipeline': 300,
+    'aaai.pipelines.DownloadImagePipeline': 300,
+
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -89,6 +91,8 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 FILES_STORE = '/Users/i/Code/scrapy/aaai/files'
+
+IMAGES_STORE = '/Users/i/Code/scrapy/aaai/images'
 
 HTTP_PROXY_ENABLED = True
 
